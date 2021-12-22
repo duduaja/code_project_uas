@@ -1,0 +1,55 @@
+.navbar {
+  background-color: #393e46;
+  position: relative;
+}
+
+.navbar ul li a {
+  font-weight: bold;
+  color: #00adb5;
+}
+
+#home {
+  min-height: 672px;
+  background-image: url(https://www.mbizmarket.co.id/news/wp-content/uploads/2021/03/jawa-timur.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+#home-home {
+  padding-top: 250px;
+}
+
+.home h1 {
+  font-weight: bold;
+  color: white;
+}
+.btn {
+  background-color: #00adb5;
+  color: #393e46;
+  font-weight: 550;
+  padding: 5px 24px;
+  border-radius: 8px;
+}
+
+.btn:hover {
+  background-color: #393e46;
+  color: #00adb5;
+}
+
+#content {
+  min-height: 732px;
+  position: relative;
+  background-color: #222427;
+  padding-top: 30px;
+}
+
+#content-content {
+  padding-top: 30px;
+}
+.content img {
+  width: 215px;
+  height: 400px;
+  object-fit: none;
+}
