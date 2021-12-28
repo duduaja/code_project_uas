@@ -8,6 +8,14 @@
   color: #00adb5;
 }
 
+.ini-footer {
+  background-color: #393e46;
+  position: relative;
+  padding-bottom: 0px;
+}
+.ini-footer p {
+  color: whitesmoke;
+}
 #home {
   min-height: 672px;
   background-image: url(https://www.mbizmarket.co.id/news/wp-content/uploads/2021/03/jawa-timur.jpg);
@@ -52,4 +60,50 @@
   width: 215px;
   height: 400px;
   object-fit: none;
+}
+
+.about-us-1 {
+  background-color: #f8f7f3;
+  padding-top: 30px;
+}
+#logo-mlaku {
+  width: 300px;
+}
+
+#text-mlaku {
+  padding-top: 75px;
+  color: #393e46;
+  font-size: large;
+}
+
+.about-us-2 {
+  background-color: #f8f7f3;
+  min-height: 300px;
+}
+
+#icon-person {
+  font-size: 75px;
+  text-decoration: none;
+}
+
+#circle-icon {
+  color: #393e46;
+}
+
+#circle-icon:hover {
+  background-color: #00adb5;
+}
+
+#person-icon {
+  font-size: 90px;
+  color: #00adb5;
+}
+
+#text-icon {
+  text-decoration: none;
+  font-weight: bold;
+  color: #393e46;
+}
+#text-icon:hover {
+  color: #00adb5;
 }
