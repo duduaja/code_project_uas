@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+    <link rel="icon" href="{{ url_for('static', filename='img/icon-Mlaku.png')}}" />
+
+    <title>Mlaku-Mlaku</title>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="/">
+          <img src="{{ url_for('static', filename='img/icon-Mlaku-removebg.png')}}" alt="logo-mlaku" width="48" height="36" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="aboutus.html">About Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- END NAVBAR -->
+
+    <!-- HOME -->
+    <header class="home text-center" id="home">
+      <div class="container" id="home-home">
+        <h1>Your East Java Travel Guide</h1>
+        <br></br>
+        <form action="/hasil" method="POST">
+            <input list="listkota" name="kota" value="Input Your Desired City" />
+            <datalist id="listkota">
+              <option value="Bangkalan">
+                <option value="Banyuwangi">
+                <option value="Gresik Regency">
+                <option value="Jember Regency">
+                <option value="Jombang Regency">
+                <option value="Kediri Regency">
+                <option value="Lamongan Regency">
+                <option value="Blitar Regency">
+                <option value="Lumajang Regency">
+                <option value="Magetan Regency">
+                <option value="Malang Regency">
+                <option value="Mojokerto Regency">
+                <option value="Nganjuk Regency">
+                <option value="Ngawi Regency">
+                <option value="Pacitan Regency">
+                <option value="Pamekasan Regency">
+                <option value="Pasuruan Regency">
+                <option value="Ponorogo Regency">
+                <option value="Probolinggo Regency">
+                <option value="Sampang Regency">
+                <option value="Sidoarjo Regency">
+                <option value="Situbondo Regency">
+                <option value="Sumenep Regency">
+                <option value="Trenggalek Regency">
+                <option value="Tuban">
+                <option value="Tulungagung Regency">
+                <option value="Batu">
+                <option value="Blitar">
+                <option value="Kediri">
+                <option value="Madiun">
+                <option value="Malang">
+                <option value="Mojokerto">
+                <option value="Pasuruan">
+                <option value="Probolinggo">
+                <option value="Surabaya">
+            </datalist>
+        </form>
+      </div>
+    </header>
+    <!-- END HOME -->
+
+    <!-- RESULT -->
+    <section class="content-section" id="portofolio">
+        <div class="container px-4 px-lg-5">
+            <a class="btn" href="#" role="button">Top Destinations In East Java</a>
+            <br></br>
+            <div class="row gx-0">
+                <div class="col-lg-6">
+                    <a class="portfolio-item" href="{{ DetailLokasi1.maps }}" target="_blank">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <div class="h1">{{ DetailLokasi1.name }}</div>
+                                <p class="mb-0">{{ DetailLokasi1.rating }} &#11088 {{ DetailLokasi1.totalrating }} Total Ratings</p>
+                            </div>
+                        </div>
+                        <img class="img-fluid" src="{{ url_for('static',filename='img/Foto_Lokasi1.jpg') }}" alt="..." /> 
+                    </a>
+                </div>
+                <div class="col-lg-6">
+                    <a class="portfolio-item" href="{{ DetailLokasi2.maps }}" target="_blank">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <div class="h1">{{ DetailLokasi2.name }}</div>
+                                <p class="mb-0">{{ DetailLokasi2.rating }} &#11088 {{ DetailLokasi2.totalrating }} Total Ratings</p>
+                            </div>
+                        </div>
+                        <img class="img-fluid" src="{{ url_for('static',filename='img/Foto_Lokasi2.jpg') }}" alt="..." /> 
+                    </a>
+                </div>
+                <div class="col-lg-6">
+                    <a class="portfolio-item" href="{{ DetailLokasi3.maps }}" target="_blank">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <div class="h1">{{ DetailLokasi3.name }}</div>
+                                <p class="mb-0">{{ DetailLokasi3.rating }} &#11088 {{ DetailLokasi3.totalrating }} Total Ratings</p>
+                            </div>
+                        </div>
+                        <img class="img-fluid" src="{{ url_for('static',filename='img/Foto_Lokasi3.jpg') }}" alt="..." /> 
+                    </a>
+                </div>
+                <div class="col-lg-6">
+                    <a class="portfolio-item" href="{{ DetailLokasi4.maps }}" target="_blank">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <div class="h1">{{ DetailLokasi4.name }}</div>
+                                <p class="mb-0">{{ DetailLokasi4.rating }} &#11088 {{ DetailLokasi4.totalrating }} Total Ratings</p>
+                            </div>
+                        </div>
+                        <img class="img-fluid" src="{{ url_for('static',filename='img/Foto_Lokasi4.jpg') }}" alt="..." /> 
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END RESULT -->
+
+    <!-- FOOTER -->
+    <section class="ini-footer text-center">
+      <div class="container">
+        <div class="row">
+          <p><br></br>Ayo mlaku-mlaku!</p>
+        </div>
+        <div class="row">
+          <p>&copy;2021 Project UAS Algoritma Pemrograman II Kelompok 10</p>
+        </div>
+      </div>
+    </section>
+    <!-- END FOOTER -->
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

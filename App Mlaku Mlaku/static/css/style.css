@@ -1,0 +1,220 @@
+.navbar {
+  background-color: #393e46;
+  position: relative;
+}
+
+.navbar ul li a {
+  font-weight: bold;
+  color: #00adb5;
+}
+
+.ini-footer {
+  background-color: #393e46;
+  position: relative;
+  padding-bottom: 0px;
+}
+.ini-footer p {
+  color: whitesmoke;
+}
+#home {
+  min-height: 672px;
+  background-image: url(https://www.mbizmarket.co.id/news/wp-content/uploads/2021/03/jawa-timur.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+#home-home {
+  padding-top: 250px;
+}
+
+.home h1 {
+  font-weight: bold;
+  color: white;
+}
+.btn {
+  margin:0 auto;
+  background-position: center;
+  background-color: #00adb5;
+  color: #393e46;
+  font-weight: 700;
+  padding: 5px 24px;
+  border-radius: 8px;
+}
+
+input[list]
+{
+  margin-left:auto;
+    margin-right:auto;
+    outline: 5px,#00adb5;
+    text-align: center;
+    border-radius: 15px;
+    padding: 5px 24px; 
+    width: 300px;
+    height: 50px; 
+    background: #00adb5;
+    font:  Helvetica, sans-serif,bold;
+    font-weight: 700;
+    color: #393e46;
+}
+
+.btn:hover {
+  margin:0 auto;
+  background-color: #393e46;
+  height: 50;
+  color: #00adb5;
+  font:  Helvetica, sans-serif,bold;
+  font-weight: 700;
+}
+.img-fluid {
+  min-height: 350px;
+  min-width: 100%;
+  max-height: 350px;
+  max-width: 100%;
+  object-fit: cover;
+  height: auto;
+}
+.content-section {
+  min-height: 1400px;
+  position: relative;
+  background-color: #222427;
+  padding-top: 30px;
+}
+
+.content-section-heading h2, .content-section-heading .h2 {
+  font-size: 3rem;
+}
+.content-section-heading h3, .content-section-heading .h3 {
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+#content {
+  min-height: 1000px;
+  position: relative;
+  background-color: #222427;
+  padding-top: 30px;
+}
+
+#content-content {
+  padding-top: 30px;
+}
+.content img {
+  width: 320px;
+  height: 800px;
+  object-fit: cover;
+}
+
+.about-us-1 {
+  background-color: #f8f7f3;
+  padding-top: 30px;
+}
+#logo-mlaku {
+  width: 300px;
+}
+
+#text-mlaku {
+  padding-top: 75px;
+  color: #393e46;
+  font-size: large;
+}
+
+.about-us-2 {
+  background-color: #f8f7f3;
+  min-height: 300px;
+}
+
+#icon-person {
+  font-size: 75px;
+  text-decoration: none;
+}
+
+#circle-icon {
+  color: #393e46;
+}
+
+#circle-icon:hover {
+  background-color: #00adb5;
+}
+
+#person-icon {
+  font-size: 90px;
+  color: #00adb5;
+}
+
+#text-icon {
+  text-decoration: none;
+  font-weight: bold;
+  color: #393e46;
+}
+#text-icon:hover {
+  color: #00adb5;
+}
+
+.portfolio-item {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  min-width: 500px;
+  min-height: 600px;
+  object-fit: cover;
+  margin: auto auto 1rem;
+}
+.portfolio-item .caption {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(33, 37, 41, 0.2);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+}
+.portfolio-item .caption .caption-content {
+  color: #fff;
+  margin: auto 2rem 2rem;
+}
+.portfolio-item .caption .caption-content h2, .portfolio-item .caption .caption-content .h2 {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+.portfolio-item .caption .caption-content p {
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+@media (min-width: 992px) {
+  .portfolio-item {
+    max-width: none;
+    margin: 0;
+  }
+  .portfolio-item .caption {
+    transition: background-color 0.7s, -webkit-clip-path 0.25s ease-out;
+    transition: clip-path 0.25s ease-out, background-color 0.7s;
+    transition: clip-path 0.25s ease-out, background-color 0.7s, -webkit-clip-path 0.25s ease-out;
+    -webkit-clip-path: inset(0px);
+            clip-path: inset(0px);
+  }
+  .portfolio-item .caption .caption-content {
+    transition: opacity 0.25s;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-bottom: 5rem;
+  }
+  .portfolio-item img {
+    transition: -webkit-clip-path 0.25s ease-out;
+    transition: clip-path 0.25s ease-out;
+    transition: clip-path 0.25s ease-out, -webkit-clip-path 0.25s ease-out;
+    -webkit-clip-path: inset(-1px);
+            clip-path: inset(-1px);
+  }
+  .portfolio-item:hover img {
+    -webkit-clip-path: inset(2rem);
+            clip-path: inset(2rem);
+  }
+  .portfolio-item:hover .caption {
+    background-color: rgba(29, 128, 159, 0.5);
+    -webkit-clip-path: inset(2rem);
+            clip-path: inset(2rem);
+  }
+}
